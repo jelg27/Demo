@@ -68,6 +68,15 @@ export class aresComponent implements OnInit, OnDestroy {
     idchart.render();
 
     let agents = new CanvasJS.Chart("agentsChart", {
+      options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false
+                }
+            }]
+        }
+    },
       zoomEnabled: true,
       animationEnabled: true,
       theme: "dark2",
