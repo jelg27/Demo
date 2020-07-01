@@ -239,6 +239,121 @@ cat.render();
       }
     });
 
+    var canvas: any = document.getElementById("chartBig");
+    var ctx = canvas.getContext("2d");
+    var gradientFill = ctx.createLinearGradient(0, 350, 0, 50);
+    gradientFill.addColorStop(0, "rgba(228, 76, 196, 0.0)");
+    gradientFill.addColorStop(1, "rgba(228, 76, 196, 0.14)");
+    var chartBig = new Chart(ctx, {
+      type: "line",
+      responsive: true,
+      data: {
+        labels: [
+          "Agente 1",
+          "Agente 2",
+          "Agente 3",
+          "Agente 4",
+          "Agente 5",
+          "Agente 6",
+          "Agente 7",
+          "Agente 8",
+          "Agente 9",
+          "Agente 10",
+          "Agente 11",
+          "Agente 12",
+          "Agente 13",
+          "Agente 14",
+          "Agente 15",
+          "Agente 16",
+          "Agente 17",
+          "Agente 18",
+          "Agente 19",
+          "Agente 20",
+          "Agente 21",
+          "Agente 22",
+          "Agente 23",
+          "Agente 24",
+          "Agente 25",
+          "Agente 26"
+        ],
+        datasets: [
+          {
+            label: "",
+            fill: true,
+            backgroundColor: gradientFill,
+            borderColor: "#e44cc4",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#e44cc4",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#be55ed",
+            //pointHoverBorderColor:'rgba(35,46,55,1)',
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: [3,2,1,1,2,49,1,64,117,68,45,92,68,105,96,75,34,66,67,38,36,83,15,1,5,262]
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+
+        tooltips: {
+          backgroundColor: "#fff",
+          titleFontColor: "#ccc",
+          bodyFontColor: "#666",
+          bodySpacing: 4,
+          xPadding: 12,
+          mode: "nearest",
+          intersect: 0,
+          position: "nearest"
+        },
+        responsive: true,
+        scales: {
+          yAxes: [
+            {
+              barPercentage: 1.6,
+              gridLines: {
+                drawBorder: false,
+                color: "rgba(0,0,0,0.0)",
+                zeroLineColor: "transparent"
+              },
+              ticks: {
+                display: true,
+                suggestedMin: 5,
+                suggestedMax: 228,
+                padding: 20,
+                fontColor: "#9a9a9a",
+                callback: function(value, index, values) {
+                  return value+" llamadas";
+              }
+            }
+          }
+          ],
+
+          xAxes: [
+            {
+              barPercentage: 1.6,
+              gridLines: {
+                drawBorder: false,
+                color: "rgba(0,0,0,0)",
+                zeroLineColor: "transparent"
+              },
+              ticks: {
+                padding: 20,
+                fontColor: "#9a9a9a"
+              }
+            }
+          ]
+        }
+      }
+    });
+
     
     
 
