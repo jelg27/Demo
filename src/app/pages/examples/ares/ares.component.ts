@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 
 import * as CanvasJS from './canvasjs.min';
+import { STATUS_CODES } from 'http';
 
 @Component({
   selector: "app-ares",
@@ -36,6 +37,27 @@ export class aresComponent implements OnInit, OnDestroy {
     });
       
     chart.render();
+
+    let stat = new CanvasJS.Chart("statusChart", {
+      theme: "dark2",
+      animationEnabled: true,
+	title:{
+		text: "CUSTOM STATUS ",
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "doughnut",
+		startAngle: 60,
+		indexLabelFontSize: 17,
+		indexLabel: "{label} - #percent%",
+		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+		dataPoints: [
+			{ y: 1129, label: "Categoria1" },
+			{ y: 0, label: "Categorias 2 a 7" }
+		]
+	}]
+});
+    stat.render();
 
     let idchart = new CanvasJS.Chart("idChart", {
       animationEnabled: true,
