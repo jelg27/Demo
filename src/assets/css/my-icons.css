@@ -133,7 +133,119 @@
 /*------------------------
   rotated/flipped icons
 -------------------------*/
-
+.icon-rbp .path1:before {
+  content: "\e91e";
+  }
+.icon-rbp .path2:before {
+  content: "\e91f";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path3:before {
+  content: "\e920";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path4:before {
+  content: "\e921";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path5:before {
+  content: "\e922";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path6:before {
+  content: "\e923";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path7:before {
+  content: "\e924";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path8:before {
+  content: "\e925";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path9:before {
+  content: "\e926";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path10:before {
+  content: "\e927";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path11:before {
+  content: "\e928";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path12:before {
+  content: "\e929";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path13:before {
+  content: "\e92a";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-rbp .path14:before {
+  content: "\e92b";
+  margin-left: -0.7919921875em;
+  color: rgb(255, 255, 255);
+}
+.icon-arduino:before {
+  content: "\e92c";
+}
+.icon-stdioc .path1:before {
+  content: "\e91a";
+}
+.icon-stdioc .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+}
+.icon-stdioc .path3:before {
+  content: "\e91c";
+  margin-left: -1em;;
+}
+.icon-stdioc .path4:before {
+  content: "\e91d";
+  margin-left: -1em;
+  opacity: 0.25;
+}
+.icon-C .path1:before {
+  content: "\e914";
+}
+.icon-C .path2:before {
+  content: "\e915";
+  margin-left: -0.888671875em;
+}
+.icon-C .path3:before {
+  content: "\e916";
+  margin-left: -0.888671875em;
+}
+.icon-C .path4:before {
+  content: "\e917";
+  margin-left: -0.888671875em;
+  color: rgb(255, 255, 255);
+}
+.icon-C .path5:before {
+  content: "\e918";
+  margin-left: -0.888671875em;
+  color: rgb(255, 255, 255);
+}
+.icon-C .path6:before {
+  content: "\e919";
+  margin-left: -0.888671875em;
+  color: rgb(255, 255, 255);
+}
 .icon-angular:before {
   content: "\e900";
 }
@@ -191,6 +303,6 @@
 .icon-streaming:before {
   content: "\e912";
 }
-.icon-textp:before {
+.icon-word:before {
   content: "\e913";
 }

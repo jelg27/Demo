@@ -19,8 +19,6 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 
 import { IndexComponent } from "./index/index.component";
 import { aresComponent } from "./examples/ares/ares.component";
-import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 
 @NgModule({
   imports: [
@@ -44,14 +42,10 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
   declarations: [
     IndexComponent,
     aresComponent,
-    RegisterpageComponent,
-    LandingpageComponent
   ],
   exports: [
     IndexComponent,
     aresComponent,
-    RegisterpageComponent,
-    LandingpageComponent
   ],
   providers: []
 })

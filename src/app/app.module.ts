@@ -21,15 +21,11 @@ import { PagesModule } from "./pages/pages.module";
 
 import { IndexComponent } from "./pages/index/index.component";
 import { aresComponent } from "./pages/examples/ares/ares.component";
-import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 @NgModule({
   declarations: [
     AppComponent
     // IndexComponent,
     // aresComponent,
-    // RegisterpageComponent,
-    // LandingpageComponent
   ],
   imports: [
     BrowserAnimationsModule,
