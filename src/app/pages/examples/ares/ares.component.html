@@ -1,0 +1,834 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        [routerLink]="['/home']"
+        placement="bottom"
+        tooltip="Designed and Coded by Creative Tim"
+      >
+        <span> BLK• </span> Design System Angular
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://twitter.com/CreativeTim"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Twitter"
+          >
+            <i class="fab fa-twitter"> </i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.facebook.com/CreativeTim"
+            placement="bottom"
+            target="_blank"
+            tooltip="Like us on Facebook"
+          >
+            <i class="fab fa-facebook-square"> </i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.instagram.com/CreativeTimOfficial"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Instagram"
+          >
+            <i class="fab fa-instagram"> </i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://github.com/creativetimofficial/blk-design-system-angular/issues"
+          >
+            Have an issue?
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-5 col-md-7">
+          <h1 class="ares-title text-left">of this Campaign</h1>
+          <h5 class="text-on-back">Totals</h5>
+          
+            <div class="table-responsive overflow: hidden" >
+              <table class="table "  >
+                <thead class="text-danger">
+                  <tr>
+                    <th class="header">Total Calls placed from this Campaign:</th>
+                    <th class="header">Average Call Length for all Calls in seconds:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1399</td>
+                    <td>55.77</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 ml-auto mr-auto">
+          <div class="card card-coin card-plain">
+             <div class="card-body">
+              <tabset
+                class="nav-tabs-danger justify-content-center tab-subcategories"
+              >
+                <tab heading="HUMAN ANSWERS">
+                  <div class="table-responsive">
+                    <table class="table tablesorter"  >
+                      
+                      <tbody>
+                        <tr>
+                          <th>Total Human Answered calls for this Campaign</th>
+                          <td> 295</td>
+                        </tr>
+                        <tr>
+                          <th>Average Call Length for all HA in seconds</th>
+                          <td> 127.04</td>
+                        </tr>
+                        <tr>
+                          <th>Total Time</th>
+                          <td> 10:24:36</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </tab>
+                <tab heading="DROPS">
+                  <div class="table-responsive">
+                    <table class="table tablesorter"  >
+                      
+                      <tbody>
+                        <tr>
+                          <th>Total Outbound DROP Calls</th>
+                          <td> 114</td>
+                          <td> 8.15%</td>
+                        </tr>
+                        <tr>
+                          <th>Percent of DROP Calls taken out of Answers</th>
+                          <td> 114 / 295</td>
+                          <td> 38.64%</td>
+                        </tr>
+                        <tr>
+                          <th>Average Length for DROP Calls in seconds</th>
+                          <td> 11.63</td>
+                        </tr>
+                        <tr>
+                          <th>Productivity Rating</th>
+                          <td> 0.65</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </tab>
+                <tab heading="NO ANSWERS">
+                  <div class="table-responsive">
+                    <table class="table tablesorter"  >
+                      
+                      <tbody>
+                        <tr>
+                          <th>Total NA calls -Busy,Disconnect,RingNoAnswer</th>
+                          <td> 148  </td>
+                          <td> 10.58%</td>
+                        </tr>
+                        <tr>
+                          <th>Total auto NA calls -system-set</th>
+                          <td> 148</td>
+                        </tr>
+                        <tr>
+                          <th>Total manual NA calls -agent-set            </th>
+                          <td> 0</td>
+                        </tr>
+                        <tr>
+                          <th>Average Call Length for NA Calls in seconds</th>
+                          <td> 0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </tab>
+              </tabset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-lg">
+    <img class="path" src="assets/img/path4.png" />
+
+    <img class="path" src="assets/img/path2.png" />
+    <div class="container align-items-center">
+    <div class="col-md-12">
+      <div class="card card-chart card-plain">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-5 col-md-7">
+              <h1 class="ares-title text-left">CALL HANGUP</h1>
+              <h5 class="text-on-back">STATS </h5>
+              </div>
+          </div>
+          <div class="row">
+            <div id="chartContainer" style="height: 700px; width: 70%; margin-left:auto;margin-right:auto;"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="section">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-md-4">
+          <h5 class="text-on-back">CALL STATUS</h5>
+          <div class="table-responsive" >
+              <table class="table "  >
+                <thead class="text-danger">
+                  <tr>
+                    <th class="header" rowspan="2">STATUS</th>
+                    <th class="header" rowspan="2">DESCRIPTION</th>
+                    <th class="header" rowspan="2">CATEGORY </th>
+                    <th class="header" rowspan="2" >CALLS</th>
+                    <th class="header" colspan="3" style="text-align:center;"> CALL TIME </th>
+                    <th class="header" >AGENT TIME</th>
+                    </tr>
+                    <tr>
+                      <th class="header"> TOTAL TIME </th>
+                      <th class="header"> AVG TIME </th>
+                      <th class="header"> CALLS/HOUR </th>
+                      <th class="header"> CALLS/HOUR </th>                      
+                      </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                  <tr>
+                    <td>AB</td>
+                    <td>Numero ocupado</td>
+                    <td>UNDEFINED</td>
+                    <td>50</td>
+                    <td>0:00:00</td>
+                    <td>0:00:00</td>
+                    <td>2.31</td>
+                    <td>0.93</td>
+                   </tr>
+                   <tr>
+                    <td>ADC</td>
+                    <td>Número desconectado</td>
+                    <td>UNDEFINED</td>
+                     
+                    <td>98 </td>
+                    <td>0:00:00 </td>
+                    <td>0:00:00 </td>
+                    <td>4.52 </td>
+                    <td>1.83 </td>
+                  </tr>
+                  <tr>
+                    <td>ANRFM</td>
+                    <td>ACLARACION</td>
+                    <td>Categoria1</td>
+                     
+                    <td>1 </td>
+                    <td>0:07:10 </td>
+                    <td>0:07:10 </td>
+                    <td>0.05 </td>
+                    <td>0.02 </td>
+                  </tr>
+                  <tr>
+                    <td>CC-T</td>
+                    <td>CON CONTACTO TT</td>
+                    <td>Categoria1</td>
+                    <td>59 </td>
+                    <td>5:10:49 </td>
+                    <td>0:05:16 </td>
+                    <td>2.72 </td>
+                    <td>1.10 </td>
+                  </tr>
+                  <tr>
+                    <td>DISPO</td>
+                    <td></td>
+                    <td></td>
+                    <td>4 </td>
+                    <td>0:01:48 </td>
+                    <td>0:00:27 </td>
+                    <td>0.18 </td>
+                    <td>0.07 </td>
+                  </tr>
+                  <tr>
+                    <td>DROP</td>
+                    <td>Abandonado</td>
+                    <td>UNDEFINED</td>
+                    <td>114 </td>
+                    <td>0:22:06 </td>
+                    <td>0:00:12 </td>
+                    <td>5.26 </td>
+                    <td>2.13 </td>
+                  </tr>
+                  <tr>
+                    <td>FB</td>
+                    <td>FAX-AVISO EN BUZON</td>
+                    <td>Categoria1</td>
+                    <td>436 </td>
+                    <td>5:17:38 </td>
+                    <td>0:00:44 </td>
+                    <td>20.12 </td>
+                    <td>8.15 </td>
+                  </tr>
+                  <tr>
+                    <td>FS</td>
+                    <td>FUERA DE SERVICIO</td>
+                    <td>Categoria1</td>
+                    <td>2 </td>
+                    <td>0:00:29 </td>
+                    <td>0:00:15 </td>
+                    <td>0.09 </td>
+                    <td>0.04 </td>
+                  </tr>
+                  <tr>
+                    <td>GT-T</td>
+                    <td>GESTION TERCERO</td>
+                    <td>Categoria1</td>
+                    <td>41 </td>
+                    <td>1:00:45 </td>
+                    <td>0:01:29 </td>
+                    <td>1.89 </td>
+                    <td>0.77 </td>
+                  </tr>
+                  <tr>
+                    <td>ILO-T</td>
+                    <td>ILOCALIZABLE</td>
+                    <td>Categoria1</td>
+                    <td>3 </td>
+                    <td>0:01:02 </td>
+                    <td>0:00:21 </td>
+                    <td>0.14 </td>
+                    <td>0.06 </td>
+                  </tr>
+                  <tr>
+                    <td>INCALL</td>
+                    <td>Registro en llamada</td>
+                    <td>UNDEFINED</td>
+                    <td>4 </td>
+                    <td>0:11:50 </td>
+                    <td>0:02:58 </td>
+                    <td>0.18 </td>
+                    <td>0.07 </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>LCNT</td>
+                    <td>No trabaja Ahi</td>
+                    <td>Categoria1</td>
+                    <td>1 </td>
+                    <td>0:00:59 </td>
+                    <td>0:00:59 </td>
+                    <td>0.05 </td>
+                    <td>0.02 </td>
+                  </tr>
+                  <tr>
+                    <td>LCNV</td>
+                    <td>No Vive Ahí</td>
+                    <td>Categoria1</td>
+                    <td>20 </td>
+                    <td>0:09:51 </td>
+                    <td>0:00:30 </td>
+                    <td>0.92 </td>
+                    <td>0.37 </td>
+                  </tr>
+                  <tr>
+                    <td>NC</td>
+                    <td>NO CONTESTAN</td>
+                    <td>Categoria1</td>
+                    <td>420 </td>
+                    <td>3:09:35 </td>
+                    <td>0:00:27 </td>
+                    <td>19.38 </td>
+                    <td>7.85 </td>
+                  </tr>
+                  <tr>
+                    <td>NOCAL</td>
+                    <td>No Calificado</td>
+                    <td>Categoria1</td>
+                    <td>90 </td>
+                    <td>2:34:32 </td>
+                    <td>0:01:43 </td>
+                    <td>4.15 </td>
+                    <td>1.68 </td>
+                  </tr>
+                  <tr>
+                    <td>PD</td>
+                    <td>PAGADA</td>
+                    <td>Categoria1</td>
+                    <td>5 </td>
+                    <td>0:07:17 </td>
+                    <td>0:01:27 </td>
+                    <td>0.23 </td>
+                    <td>0.09 </td>
+                  </tr>
+                  <tr>
+                    <td>PP-DP</td>
+                    <td>PROMESA DE DACION</td>
+                    <td>Categoria1</td>
+                    <td>4 </td>
+                    <td>0:14:56 </td>
+                    <td>0:03:44 </td>
+                    <td>0.18 </td>
+                    <td>0.07 </td>
+                  </tr>
+                  <tr>
+                    <td>PP-PTE</td>
+                    <td>PROMESA DE PAGO</td>
+                    <td>Categoria1</td>
+                    <td>23 </td>
+                    <td>1:51:48 </td>
+                    <td>0:04:52 </td>
+                    <td>1.06 </td>
+                    <td>0.43 </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>REN-T</td>
+                    <td>RENUENTE</td>
+                    <td>Categoria1</td>
+                    <td>24 </td>
+                    <td>1:17:53 </td>
+                    <td>0:03:15 </td>
+                    <td>1.11 </td>
+                    <td>0.45 </td>
+                  </tr>
+                  <tr>
+                    <td class="td-total" colspan="3">Total:</td>
+                    <td>1399</td>
+                    <td>21:40:28</td>
+                    <td>0:00:56 </td>
+                    <td>64.55</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-5 col-md-8 ml-auto mr-auto">
+          <h1 class="ares-title text-left">STATS</h1>
+          <h5 class="text-on-back">LIST ID</h5>
+          <div class="table-responsive" >
+              <table class="table "  >
+                <thead class="text-danger">
+                  <tr>
+                    <th class="header" rowspan="2">LIST</th>
+                    <th class="header" rowspan="2">CALLS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>995 -</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>998 -</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>202004009142900 - Lista1</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>202006002115718 - Lista 2</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>202006002124434 - Lista 3</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>202006002124925 - Lista 4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>202006003131836 - Lista 5</td>
+                    <td>580</td>
+                  </tr>
+                  <tr>
+                    <td>202006004113333 - Lista 6</td>
+                    <td>788</td>
+                  </tr>
+                  <tr>
+                    <td class="td-total">Total:</td>
+                    <td>1399</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 ml-auto mr-auto">
+          <hr> <hr> <hr> <hr> <hr> <hr> <hr> <hr><hr> <hr> <hr> <hr>
+          <div class="card card-coin card-plain">
+             <div class="card-body">
+              <div id="idChart" style="height: 500px; width: 90%; margin-left:auto;margin-right:auto;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-md-4">
+          <h5>CUSTOM STATUS CATEGORY STATS</h5>
+          <div class="table-responsive" >
+              <table class="table "  >
+                <thead class="text-danger">
+                  <tr>
+                    <th class="header">Category</th>
+                    <th class="header">Calls</th>
+                    <th class="header">Description</th>
+                  </tr>
+                    
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Categoria1</td>
+                    <td>1129</td>
+                    <td>Categoria1</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>0</td><td>Categoria5</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>0</td>
+                    <td>Categoria6</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>Categoria7</td>
+                  </tr>
+                  <tr>
+                    <td>Categoria2</td>
+                    <td>0</td>
+                    <td>Categoria2</td>
+                  </tr>
+                  <tr>
+                    <td>Categoria3</td>
+                    <td>0</td>
+                    <td>Categoria3</td>
+                  </tr>
+                  <tr>
+                    <td>Categoria4</td>
+                    <td>0</td>
+                    <td>Categoria4</td>
+                  </tr>
+                  <tr>
+                    <td class="td-total">Total:</td>
+                    <td>1129</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-12 col-md-8 col-md-4">
+          <h5 class="text-on-back">CALL STATUS</h5>
+          <div class="table-responsive" >
+              <table class="table "  >
+                <thead class="text-danger">
+                      <tr>
+                      <th class="header"> AGENT </th>
+                      <th class="header"> CALLS </th>
+                      <th class="header"> TIME HH:MM:SS </th>
+                      <th class="header"> AVERAGE</th>                      
+                      </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Agente 1</td>
+                    <td>3</td>
+                    <td>00:02:52</td>
+                    <td>00:00:57</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 2</td>
+                    <td>2</td>
+                    <td>00:00:18</td>
+                    <td>00:00:09</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 3</td>
+                    <td>1</td>
+                    <td>00:00:13</td>
+                    <td>00:00:13</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 4</td>
+                    <td>1</td>
+                    <td>00:00:15</td>
+                    <td>00:00:15</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 5</td>
+                    <td>2</td>
+                    <td>00:00:46</td>
+                    <td>00:00:23</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 6</td>
+                    <td>49</td>
+                    <td>01:12:09</td>
+                    <td>00:01:28</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 7</td>
+                    <td>1</td>
+                    <td>00:00:08</td>
+                    <td>00:00:08</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 8</td>
+                    <td>64</td>
+                    <td>00:51:22</td>
+                    <td>00:00:48</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 9</td>
+                    <td>117</td>
+                    <td>01:31:05</td>
+                    <td>00:00:47</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 10</td>
+                    <td>68</td>
+                    <td>00:52:16</td>
+                    <td>00:00:46</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 11</td>
+                    <td>45</td>
+                    <td>00:43:29</td>
+                    <td>00:00:58</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 12</td>
+                    <td>92</td>
+                    <td>02:18:39</td>
+                    <td>00:01:30</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 13</td>
+                    <td>68</td>
+                    <td>01:17:17</td>
+                    <td>00:01:08</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 14</td>
+                    <td>105</td>
+                    <td>01:20:52</td>
+                    <td>00:00:46</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 15</td>
+                    <td>96</td>
+                    <td>01:03:46</td>
+                    <td>00:00:40</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 16</td>
+                    <td>75</td>
+                    <td>01:49:41</td>
+                    <td>00:01:28</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 17</td>
+                    <td>34</td>
+                    <td>00:44:40</td>
+                    <td>00:01:19</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 18</td>
+                    <td>66</td>
+                    <td>01:37:52</td>
+                    <td>00:01:29</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 19</td>
+                    <td>67</td>
+                    <td>01:18:05</td>
+                    <td>00:01:10</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 20</td>
+                    <td>38</td>
+                    <td>00:48:12</td>
+                    <td>00:01:16</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 21</td>
+                    <td>36</td>
+                    <td>02:17:29</td>
+                    <td>00:03:49</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 22</td>
+                    <td>83</td>
+                    <td>01:18:43</td>
+                    <td>00:00:57</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 23</td>
+                    <td>15</td>
+                    <td>00:05:20</td>
+                    <td>00:00:21</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 24</td>
+                    <td>1</td>
+                    <td>00:00:20</td>
+                    <td>00:00:20</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 25</td>
+                    <td>5</td>
+                    <td>00:02:33</td>
+                    <td>00:00:31</td>
+                  </tr>
+                  <tr>
+                    <td>Agente 26</td>
+                    <td>262</td>
+                    <td>00:22:06</td>
+                    <td>00:00:05</td>
+                  </tr>
+                  <tr>
+                    <td class="td-total">Total:</td>
+                    <td>1396</td>
+                    <td>21:40:28</td>
+                    <td>00:00:56</td>
+                  </tr>
+                  <tr>
+                    <td class="td-total" colspan="3">Average Wait time between calls:</td>
+                    <td class="td-total">00:00:25</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="agentsChart" style="height: 720px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"><h1 class="title">Jorge Eduardo Lopez Gonzalez</h1></div>
+        <div class="col-md-6">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
