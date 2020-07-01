@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-info fixed-top navbar-transparent"  id="navbar-top">
   <div class="container">
     <div class="navbar-translate">
-      <a class="navbar-brand" placement="bottom" [routerLink]="['/home']" target="_blank">
+
+       <a class="navbar-brand" placement="bottom" [routerLink]="['/ares']" target="_blank">
         <span> CV • </span> OwO
       </a>
       
@@ -18,7 +19,6 @@
   <div class="page-header">
     <img class="dots" src="assets/img/dots.png" />
 
-    <img class="path" src="assets/img/path4.png" />
 
     <div class="container align-items-center">
       <div class="row">
@@ -394,6 +394,135 @@
     </div>
   </section>
 
+  <section class="section section-lg">
+    <section class="section">
+      <img class="path" src="assets/img/path4.png" />
+
+      <div class="container">
+        <div class="row row-grid justify-content-between">
+          <div class="col-md-6 mt-lg-5">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 px-2 py-2">
+                <div class="card card-stats">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                          <i class="tim-icons icon-bell-55 text-info"> </i>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="numbers">
+                          <p class="card-title">436</p>
+                          <p></p>
+                          <p class="card-category">FAX-AVISO EN BUZON</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 px-2 py-2">
+                <div class="card card-stats upper bg-default">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                          <i class="tim-icons icon-alert-circle-exc text-danger"> </i>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="numbers">
+                          <p class="card-title">420</p>
+                          <p></p>
+                          <p class="card-category">NO CONTESTAN</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 px-2 py-2">
+                <div class="card card-stats">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                          <i class="tim-icons icon-coins text-warning"> </i>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="numbers">
+                          <p class="card-title">5</p>
+                          <p></p>
+                          <p class="card-category">PAGADA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 px-2 py-2">
+                <div class="card card-stats">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-warning">
+                          <i class="tim-icons icon-settings text-success">
+                          </i>
+                        </div>
+                      </div>
+                      <div class="col-7 col-md-8">
+                        <div class="numbers">
+                          <p class="card-title">98</p>
+                          <p></p>
+                          <p class="card-category">NUMERO DESCONECTADO</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 ml-auto mr-auto">
+          
+            <div class="card card-coin card-plain">
+               <div class="card-body">
+                <div id="categoriaChart" style="height: 500px; width: 90%; margin-left:auto;margin-right:auto;"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+  </section>
+
+  
+  <section class="section section-lg">
+    
+    <div class="col-md-12">
+      <div class="card card-chart card-plain">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-sm-6 text-left">
+              <hr class="line-primary" />
+
+              <h5 class="card-category">NUMERO DE LLAMADAS</h5>
+              <h2 class="card-title">POR STATUS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area"><canvas id="callChart"> </canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <img class="dots" src="assets/img/dots.png" />
 
@@ -538,7 +667,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="section">
     <img class="dots" src="assets/img/dots.png" />
@@ -722,21 +850,62 @@
                     <td>21:40:28</td>
                     <td>00:00:56</td>
                   </tr>
-                  <tr>
-                    <td class="td-total" colspan="3">Average Wait time between calls:</td>
-                    <td class="td-total">00:00:25</td>
-                  </tr>
+                  
                 </tbody>
               </table>
+            </div>
+          </div>
+      </div>
 
+      <div class="row">
+        <div class="col-lg-4 col-md-8 col-md-10">
+          <div class="card card-stats bg-info">
+            <div class="card-body">
+              <div class="justify-content-center">
+                <div class="numbers">
+                <p class="card-title">00:00:25</p>
+                <p class="card-category text-white">Average Wait time between calls</p>
+                </div>
+              </div>
             </div>
         </div>
+
+        <div class="card card-stats bg-danger">
+          <div class="card-body">
+            <div class="justify-content-center">
+              <div class="numbers">
+              <p class="card-title">Agente 21 00:03:49</p>
+              <p class="card-category text-white">Tiempo promedio de llamada mas alto</p>
+              </div>
+            </div>
+          </div>
       </div>
-      <div class="row">
-        <div id="agentsChart" style="height: 720px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+        </div>
       </div>
     </div>
   </section>
+  
+  <section class="section section-lg">
+    
+    <div class="col-md-12">
+      <div class="card card-chart card-plain">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-sm-6 text-left">
+              <hr class="line-primary" />
+
+              <h5 class="card-category">Tiempo de llamada</h5>
+              <h2 class="card-title">Promedio</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area"><canvas id="chartBig"> </canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -758,4 +927,5 @@
       </div>
     </div>
   </footer>
+
 </div>
